@@ -5,14 +5,6 @@
 #include <iostream>
 #include <vector>
 
-// enumeration with accepted argument types
-enum {
-    pt_none,
-    pt_int,
-    pt_float,
-    pt_text
-};
-
 typedef int param_type;
 
 

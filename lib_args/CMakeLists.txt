@@ -2,7 +2,9 @@ add_library(lib_args)
 
 target_sources(lib_args
         PRIVATE
-        src/lib_args.cpp)
+        src/lib_args.cpp
+        src/flag_option.cpp
+        src/full_argument_parser.cpp)
 
 target_compile_features(lib_args PUBLIC cxx_std_17)
 target_include_directories(lib_args PUBLIC inc/)
