@@ -3,8 +3,10 @@ add_library(lib_args)
 target_sources(lib_args
         PRIVATE
         src/lib_args.cpp
-        src/flag_option.cpp
-        src/full_argument_parser.cpp)
+        src/argument_parsers/int_argument_parser.cpp
+        src/argument_type/int_argument.cpp
+        src/argument_parsers/double_argument_parser.cpp
+        src/argument_type/double_argument.cpp)
 
 target_compile_features(lib_args PUBLIC cxx_std_17)
 target_include_directories(lib_args PUBLIC inc/)

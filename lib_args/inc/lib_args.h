@@ -8,23 +8,16 @@
 typedef int param_type;
 
 
-// TODO: option can be 'h'(short) , 'help'(long) , description, true/false , type of argument
+// TODO: option can be 'h'(short) , 'help'(long) , description, true/false , type of iargument
 // option is used for configuring the parser
 struct option {
     char short_flag;            // simple char flag for option, e.g. 'h' for help
     std::string long_flag;      // long flag format for option, e.g. "help"
     std::string description;    // option description
-
-    // TODO: Unnecessary variable
-    // bool accepts_parameter;     // does the option accepts an extra parameter
-                                // e.g. in: --input file.txt
-                                //      input is the option's flag
-                                //      file.txt is the option's parameter
-                                // some options do not accept parameter, e.g. --help
     param_type pt;              // what's the parameter type (if accepted): pt_int, pt_float or pt_text
 };
 
-// argument is used for parser's output
+// iargument is used for parser's output
 struct argument{
     std::string long_flag;      // long flag of a recognized option
     param_type pt;              // parameter type

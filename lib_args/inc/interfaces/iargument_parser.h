@@ -7,12 +7,13 @@
 
 #include <string>
 #include <memory>
-#include "argument.h"
+#include <charconv>
+#include "iargument.h"
 
 namespace arguments{
     class iargument_parser{
     public:
-        virtual std::unique_ptr<argument> parse(std::string id, const char* arg) const = 0;
+        virtual std::unique_ptr<arguments::iargument> parse(std::string id, const char* arg) const = 0;
         virtual ~iargument_parser() = default;
     };
 }

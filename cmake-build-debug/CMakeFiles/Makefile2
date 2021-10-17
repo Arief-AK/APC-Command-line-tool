@@ -99,7 +99,7 @@ CMakeFiles/command_line_tool.dir/all: lib_args/CMakeFiles/lib_args.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/command_line_tool.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug/CMakeFiles" 7
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug/CMakeFiles" 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/command_line_tool.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug/CMakeFiles" 0
 .PHONY : CMakeFiles/command_line_tool.dir/rule
@@ -121,12 +121,12 @@ CMakeFiles/command_line_tool.dir/clean:
 lib_args/CMakeFiles/lib_args.dir/all:
 	$(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/depend
 	$(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug/CMakeFiles" --progress-num=4,5,6,7 "Built target lib_args"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug/CMakeFiles" --progress-num=4,5,6,7,8,9 "Built target lib_args"
 .PHONY : lib_args/CMakeFiles/lib_args.dir/all
 
 # Build rule for subdir invocation for target.
 lib_args/CMakeFiles/lib_args.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug/CMakeFiles" 4
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug/CMakeFiles" 6
 	$(MAKE) -f CMakeFiles/Makefile2 lib_args/CMakeFiles/lib_args.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug/CMakeFiles" 0
 .PHONY : lib_args/CMakeFiles/lib_args.dir/rule

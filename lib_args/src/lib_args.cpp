@@ -58,12 +58,12 @@ std::vector<argument> option_parser::parse(const std::string& line) {
     std::istringstream iss{line};
     std::string token{};
 
-    // current_option is not null if the next token is expected to be an extra argument
-    // e.g. in "--input code.cpp": "--input" is an option's flag and "code.cpp" an extra argument
+    // current_option is not null if the next token is expected to be an extra iargument
+    // e.g. in "--input code.cpp": "--input" is an option's flag and "code.cpp" an extra iargument
     //
     // if the last parsed token was "--input" then `current_option` would point
     // to an option associated with the "input" flag. In the next iteration "code.cpp" would be parsed.
-    // this way the currently selected option can be linked with its argument
+    // this way the currently selected option can be linked with its iargument
 
     option* current_option{nullptr};
 
@@ -99,12 +99,12 @@ std::vector<argument> option_parser::parse(const std::string& line) {
             }
         }
         else {
-            // a flag was recognized in the previous iteration and an option was matched that needs an argument
+            // a flag was recognized in the previous iteration and an option was matched that needs an iargument
 
-            // create an empty argument structure
+            // create an empty iargument structure
             argument arg{current_option->long_flag, current_option->pt, "", 0, 0.0};
 
-            // parse the extra argument passed in command line
+            // parse the extra iargument passed in command line
             switch (current_option->pt){
                 case pt_int:
                     arg.int_value = std::stoi(token);
@@ -117,7 +117,7 @@ std::vector<argument> option_parser::parse(const std::string& line) {
                     break;
             }
 
-            // add the fully parsed option+argument to results
+            // add the fully parsed option+iargument to results
             result.push_back(arg);
             current_option = nullptr;
         }
