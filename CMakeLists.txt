@@ -8,7 +8,8 @@ set(target command_line_tool)
 target_sources(${target}
         PRIVATE
         main.cpp
-        program.cpp)
+        #program.cpp
+        )
 
 target_compile_features(${target} PRIVATE cxx_std_20)
 set_target_properties(${target} PROPERTIES CXX_EXTENSIONS OFF)

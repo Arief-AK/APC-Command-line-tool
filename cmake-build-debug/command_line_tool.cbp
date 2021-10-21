@@ -134,28 +134,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/src/argument_parsers/double_argument_parser.cpp">
-			<Option target="lib_args"/>
-		</Unit>
 		<Unit filename="/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/src/argument_parsers/int_argument_parser.cpp">
-			<Option target="lib_args"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/src/argument_type/double_argument.cpp">
 			<Option target="lib_args"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/src/argument_type/int_argument.cpp">
 			<Option target="lib_args"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/src/lib_args.cpp">
+		<Unit filename="/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/src/option.cpp">
+			<Option target="lib_args"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/src/option_parser.cpp">
 			<Option target="lib_args"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/main.cpp">
-			<Option target="command_line_tool"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/program.cpp">
-			<Option target="command_line_tool"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/program.h">
 			<Option target="command_line_tool"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/CMakeLists.txt">

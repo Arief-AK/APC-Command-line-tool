@@ -1,9 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/lib_args.dir/src/argument_parsers/double_argument_parser.cpp.o"
   "CMakeFiles/lib_args.dir/src/argument_parsers/int_argument_parser.cpp.o"
-  "CMakeFiles/lib_args.dir/src/argument_type/double_argument.cpp.o"
   "CMakeFiles/lib_args.dir/src/argument_type/int_argument.cpp.o"
-  "CMakeFiles/lib_args.dir/src/lib_args.cpp.o"
+  "CMakeFiles/lib_args.dir/src/option.cpp.o"
+  "CMakeFiles/lib_args.dir/src/option_parser.cpp.o"
   "liblib_args.a"
   "liblib_args.pdb"
 )

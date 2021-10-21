@@ -12,7 +12,7 @@ class int_argument : public arguments::iargument{
     public:
         int_argument(std::string id, int value);
         virtual const std::string& id() const override;
-        ~int_argument();
+        virtual ~int_argument() override;
 
     private:
 

@@ -125,33 +125,6 @@ lib_args/fast:
 	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/build
 .PHONY : lib_args/fast
 
-src/argument_parsers/double_argument_parser.o: src/argument_parsers/double_argument_parser.cpp.o
-
-.PHONY : src/argument_parsers/double_argument_parser.o
-
-# target to build an object file
-src/argument_parsers/double_argument_parser.cpp.o:
-	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/argument_parsers/double_argument_parser.cpp.o
-.PHONY : src/argument_parsers/double_argument_parser.cpp.o
-
-src/argument_parsers/double_argument_parser.i: src/argument_parsers/double_argument_parser.cpp.i
-
-.PHONY : src/argument_parsers/double_argument_parser.i
-
-# target to preprocess a source file
-src/argument_parsers/double_argument_parser.cpp.i:
-	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/argument_parsers/double_argument_parser.cpp.i
-.PHONY : src/argument_parsers/double_argument_parser.cpp.i
-
-src/argument_parsers/double_argument_parser.s: src/argument_parsers/double_argument_parser.cpp.s
-
-.PHONY : src/argument_parsers/double_argument_parser.s
-
-# target to generate assembly for a file
-src/argument_parsers/double_argument_parser.cpp.s:
-	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/argument_parsers/double_argument_parser.cpp.s
-.PHONY : src/argument_parsers/double_argument_parser.cpp.s
-
 src/argument_parsers/int_argument_parser.o: src/argument_parsers/int_argument_parser.cpp.o
 
 .PHONY : src/argument_parsers/int_argument_parser.o
@@ -178,33 +151,6 @@ src/argument_parsers/int_argument_parser.s: src/argument_parsers/int_argument_pa
 src/argument_parsers/int_argument_parser.cpp.s:
 	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/argument_parsers/int_argument_parser.cpp.s
 .PHONY : src/argument_parsers/int_argument_parser.cpp.s
-
-src/argument_type/double_argument.o: src/argument_type/double_argument.cpp.o
-
-.PHONY : src/argument_type/double_argument.o
-
-# target to build an object file
-src/argument_type/double_argument.cpp.o:
-	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/argument_type/double_argument.cpp.o
-.PHONY : src/argument_type/double_argument.cpp.o
-
-src/argument_type/double_argument.i: src/argument_type/double_argument.cpp.i
-
-.PHONY : src/argument_type/double_argument.i
-
-# target to preprocess a source file
-src/argument_type/double_argument.cpp.i:
-	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/argument_type/double_argument.cpp.i
-.PHONY : src/argument_type/double_argument.cpp.i
-
-src/argument_type/double_argument.s: src/argument_type/double_argument.cpp.s
-
-.PHONY : src/argument_type/double_argument.s
-
-# target to generate assembly for a file
-src/argument_type/double_argument.cpp.s:
-	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/argument_type/double_argument.cpp.s
-.PHONY : src/argument_type/double_argument.cpp.s
 
 src/argument_type/int_argument.o: src/argument_type/int_argument.cpp.o
 
@@ -233,32 +179,59 @@ src/argument_type/int_argument.cpp.s:
 	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/argument_type/int_argument.cpp.s
 .PHONY : src/argument_type/int_argument.cpp.s
 
-src/lib_args.o: src/lib_args.cpp.o
+src/option.o: src/option.cpp.o
 
-.PHONY : src/lib_args.o
+.PHONY : src/option.o
 
 # target to build an object file
-src/lib_args.cpp.o:
-	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/lib_args.cpp.o
-.PHONY : src/lib_args.cpp.o
+src/option.cpp.o:
+	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/option.cpp.o
+.PHONY : src/option.cpp.o
 
-src/lib_args.i: src/lib_args.cpp.i
+src/option.i: src/option.cpp.i
 
-.PHONY : src/lib_args.i
+.PHONY : src/option.i
 
 # target to preprocess a source file
-src/lib_args.cpp.i:
-	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/lib_args.cpp.i
-.PHONY : src/lib_args.cpp.i
+src/option.cpp.i:
+	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/option.cpp.i
+.PHONY : src/option.cpp.i
 
-src/lib_args.s: src/lib_args.cpp.s
+src/option.s: src/option.cpp.s
 
-.PHONY : src/lib_args.s
+.PHONY : src/option.s
 
 # target to generate assembly for a file
-src/lib_args.cpp.s:
-	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/lib_args.cpp.s
-.PHONY : src/lib_args.cpp.s
+src/option.cpp.s:
+	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/option.cpp.s
+.PHONY : src/option.cpp.s
+
+src/option_parser.o: src/option_parser.cpp.o
+
+.PHONY : src/option_parser.o
+
+# target to build an object file
+src/option_parser.cpp.o:
+	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/option_parser.cpp.o
+.PHONY : src/option_parser.cpp.o
+
+src/option_parser.i: src/option_parser.cpp.i
+
+.PHONY : src/option_parser.i
+
+# target to preprocess a source file
+src/option_parser.cpp.i:
+	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/option_parser.cpp.i
+.PHONY : src/option_parser.cpp.i
+
+src/option_parser.s: src/option_parser.cpp.s
+
+.PHONY : src/option_parser.s
+
+# target to generate assembly for a file
+src/option_parser.cpp.s:
+	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/option_parser.cpp.s
+.PHONY : src/option_parser.cpp.s
 
 # Help Target
 help:
@@ -269,21 +242,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... lib_args"
-	@echo "... src/argument_parsers/double_argument_parser.o"
-	@echo "... src/argument_parsers/double_argument_parser.i"
-	@echo "... src/argument_parsers/double_argument_parser.s"
 	@echo "... src/argument_parsers/int_argument_parser.o"
 	@echo "... src/argument_parsers/int_argument_parser.i"
 	@echo "... src/argument_parsers/int_argument_parser.s"
-	@echo "... src/argument_type/double_argument.o"
-	@echo "... src/argument_type/double_argument.i"
-	@echo "... src/argument_type/double_argument.s"
 	@echo "... src/argument_type/int_argument.o"
 	@echo "... src/argument_type/int_argument.i"
 	@echo "... src/argument_type/int_argument.s"
-	@echo "... src/lib_args.o"
-	@echo "... src/lib_args.i"
-	@echo "... src/lib_args.s"
+	@echo "... src/option.o"
+	@echo "... src/option.i"
+	@echo "... src/option.s"
+	@echo "... src/option_parser.o"
+	@echo "... src/option_parser.i"
+	@echo "... src/option_parser.s"
 .PHONY : help
 
 

@@ -17,35 +17,27 @@ namespace options{
         option(std::string short_flag,
                std::string long_flag,
                std::string desc,
-               std::unique_ptr<arguments::iargument_parser> parser)
-               :m_short(short_flag), m_long(long_flag), m_desc(desc), m_parser(std::move(parser)) {}
+               std::unique_ptr<arguments::iargument_parser> parser);
 
         // Get member variable short_flag
-        const std::string& short_flag() const {
-            return m_short;
-        }
+        const std::string& short_flag() const;
+
         // Get member variable long_flag
-        const std::string& long_flag() const {
-            return m_long;
-        }
+        const std::string& long_flag() const;
 
         // Get member variable description
-        const std::string& desc() const {
-            return m_desc;
-        }
+        const std::string& desc() const;
 
-        // virtual method for help as different option have different help
+        // Virtual method that displays information of the 'flag' or 'command'
         virtual std::string help() const;
 
-        // Virtual method to check if option requires to parser its arguments
+        // Virtual method that checks if the option is a 'flag' or 'command'
         virtual bool parseable(const char* arg) const;
 
-        // Virtual method to inject an argument to parse
-        virtual std::unique_ptr<arguments::iargument> parse(const char* arg) const{
-            return m_parser->parse(m_long,arg);
-        }
+        // Virtual method that returns parsed argument(s)
+        virtual std::unique_ptr<arguments::iargument> parse(const char* arg) const;
 
-        // Virtual destructor, will be implemented by concrete option classes
+        // Virtual destructor, implemented by the parent class
         virtual ~option() = default;
 
     private:

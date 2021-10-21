@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/command_line_tool.dir/main.cpp.o"
-  "CMakeFiles/command_line_tool.dir/program.cpp.o"
   "command_line_tool"
   "command_line_tool.pdb"
 )

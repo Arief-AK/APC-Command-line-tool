@@ -1,7 +1,9 @@
 #include <sstream>
-
-#include "lib_args.h"
-#include "program.h"
+#include <iostream>
+#include <argument_parsers/int_argument_parser.h>
+#include "../inc/option.h"
+#include "../inc/option_parser.h"
+//#include "program.h"
 
 
 int main(int argc, char *argv[]) {
@@ -11,7 +13,17 @@ int main(int argc, char *argv[]) {
         oss << argv[arg_no] << ' ';
     }
 
-    add_option({'v', "verbose", "prints verbose diagnostics", false, pt_none});
+    // Make an option parser
+    lib::option_parser optionParser;
+
+    optionParser.add_option(std::make_unique<options::option>("v",
+                                                              "verbose",
+                                                              "A test flag",
+                                                              std::make_unique<lib::int_argument_parser>()));
+
+    std::cout << "Done!" << '\n';
+
+    /*add_option({'v', "verbose", "prints verbose diagnostics", false, pt_none});
     add_option({'l', "level", "sets compression level (0.0-1.0)", true, pt_float});
     add_option({'i', "input", "input file name", true, pt_text});
     add_option({'o', "output", "output file name", true, pt_text});
@@ -21,7 +33,7 @@ int main(int argc, char *argv[]) {
 
     program prog{arguments};
 
-    prog.run();
+    prog.run();*/
 
     return 0;
 }
