@@ -2,8 +2,6 @@
 #include <argument_parsers/int_argument_parser.h>
 #include "../inc/option.h"
 #include "../inc/option_parser.h"
-//#include "program.h"
-
 
 int main(int argc, char *argv[]) {
 
@@ -19,8 +17,10 @@ int main(int argc, char *argv[]) {
     optionParser.add_option(std::make_unique<options::option>("v",
                                                               "verbose",
                                                               "A test flag",
+                                                              false,
                                                               std::make_unique<lib::int_argument_parser>()));
 
+    // Print all accepted options from the parser
     optionParser.print_all_options();
     std::cout << "Done!";
 

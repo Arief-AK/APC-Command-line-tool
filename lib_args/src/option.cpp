@@ -5,8 +5,9 @@
 #include "../inc/option.h"
 
 options::option::option(std::string short_flag, std::string long_flag, std::string desc,
-                        std::unique_ptr<arguments::iargument_parser> parser)
-                        :m_short(short_flag), m_long(long_flag), m_desc(desc), m_parser(std::move(parser)) {}
+                        bool accept_arguments, std::unique_ptr<arguments::iargument_parser> parser)
+                        :m_short(short_flag), m_long(long_flag), m_desc(desc), m_accept_arguments(accept_arguments),
+                        m_parser(std::move(parser)) {}
 
 const std::string &options::option::short_flag() const {
     return m_short;
@@ -26,10 +27,16 @@ std::string options::option::help() const {
 
 bool options::option::parseable(const char *arg) const {
     // TODO: Implement if option is parse-able
-    if (arg){
-        return false;
+
+    // Check if option requires arguments
+    if (m_accept_arguments){
+
+        // Go through the arguments
+        if(arg){
+            return true;
+        }
     }
-    return true;
+    return false;
 }
 
 std::unique_ptr<arguments::iargument> options::option::parse(const char *arg) const {

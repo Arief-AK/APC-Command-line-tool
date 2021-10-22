@@ -17,6 +17,7 @@ namespace options{
         option(std::string short_flag,
                std::string long_flag,
                std::string desc,
+               bool accept_arguments,
                std::unique_ptr<arguments::iargument_parser> parser);
 
         // Get member variable short_flag
@@ -44,6 +45,7 @@ namespace options{
         std::string m_short;
         std::string m_long;
         std::string m_desc;
+        bool m_accept_arguments;
         std::unique_ptr<arguments::iargument_parser> m_parser;
     };
 }
