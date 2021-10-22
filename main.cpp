@@ -1,5 +1,4 @@
 #include <sstream>
-#include <iostream>
 #include <argument_parsers/int_argument_parser.h>
 #include "../inc/option.h"
 #include "../inc/option_parser.h"
@@ -16,12 +15,14 @@ int main(int argc, char *argv[]) {
     // Make an option parser
     lib::option_parser optionParser;
 
+    // Add an option to the parser
     optionParser.add_option(std::make_unique<options::option>("v",
                                                               "verbose",
                                                               "A test flag",
                                                               std::make_unique<lib::int_argument_parser>()));
 
-    std::cout << "Done!" << '\n';
+    optionParser.print_all_options();
+    std::cout << "Done!";
 
     /*add_option({'v', "verbose", "prints verbose diagnostics", false, pt_none});
     add_option({'l', "level", "sets compression level (0.0-1.0)", true, pt_float});

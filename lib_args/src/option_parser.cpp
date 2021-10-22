@@ -9,6 +9,12 @@ void lib::option_parser::add_option(std::unique_ptr<options::option> new_option)
     m_options.push_back(std::move(new_option));
 }
 
+void lib::option_parser::print_all_options() {
+    for (auto& option: m_options) {
+        std::cout << option->desc() << '\n';
+    }
+}
+
 std::vector<std::unique_ptr<arguments::iargument>> lib::option_parser::parse_option(char **args, int nargs) const
 {
     // Temporary vector to store parsed arguments
@@ -30,5 +36,7 @@ std::vector<std::unique_ptr<arguments::iargument>> lib::option_parser::parse_opt
             }
         }
     }
+    // TODO: Need to revise on 'copy elision'
+    //return std::move(parsed);
     return parsed;
 }
