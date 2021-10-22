@@ -27,9 +27,9 @@ std::string options::option::help() const {
 bool options::option::parseable(const char *arg) const {
     // TODO: Implement if option is parse-able
     if (arg){
-        return true;
+        return false;
     }
-    return false;
+    return true;
 }
 
 std::unique_ptr<arguments::iargument> options::option::parse(const char *arg) const {
