@@ -22,6 +22,25 @@ int main(int argc, char *argv[]) {
 
     // Print all accepted options from the parser
     optionParser.print_all_options();
+
+    // Parse all arguments passed from terminal
+    auto arguments = optionParser.parse_option(argv, argc);
+
+    // Attempt to recognise arguments
+    for (const auto& arg: arguments){
+
+        // Get a raw pointer from the unique pointer of the arguments
+        arguments::iargument* raw_arg = arg.get();
+
+        // Using 'dynamic cast' try to convert the correct pointer type
+        if(auto* int_arg = dynamic_cast<lib::int_argument*>(raw_arg)){
+            std::cout <<  int_arg->id() << ":" << int_arg->value();
+        }
+        else{
+            std::cout << "\nUnidentified argument for id: " << arg->id();
+        }
+    }
+
     std::cout << "Done!";
 
     /*add_option({'v', "verbose", "prints verbose diagnostics", false, pt_none});

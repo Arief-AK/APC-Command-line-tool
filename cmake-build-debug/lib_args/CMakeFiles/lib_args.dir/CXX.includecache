@@ -6,6 +6,32 @@
 
 #IncludeRegexTransform: 
 
+../lib_args/inc/argument_parsers/int_argument_parser.h
+../interfaces/iargument_parser.h
+../lib_args/inc/interfaces/iargument_parser.h
+../inc/argument_type/int_argument.h
+../lib_args/inc/inc/argument_type/int_argument.h
+
+../lib_args/inc/argument_type/int_argument.h
+interfaces/iargument.h
+../lib_args/inc/argument_type/interfaces/iargument.h
+
+../lib_args/inc/interfaces/iargument.h
+string
+-
+memory
+-
+
+../lib_args/inc/interfaces/iargument_parser.h
+string
+-
+memory
+-
+charconv
+-
+iargument.h
+../lib_args/inc/interfaces/iargument.h
+
 /mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/inc/interfaces/iargument.h
 string
 -
@@ -41,6 +67,18 @@ iostream
 /mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/inc/option.h
 ../inc/interfaces/iargument.h
 /mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/inc/interfaces/iargument.h
+
+/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/src/argument_parsers/int_argument_parser.cpp
+../inc/argument_parsers/int_argument_parser.h
+/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/src/inc/argument_parsers/int_argument_parser.h
+
+/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/src/argument_type/int_argument.cpp
+../inc/argument_type/int_argument.h
+/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/src/inc/argument_type/int_argument.h
+
+/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/src/option.cpp
+../inc/option.h
+/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/inc/option.h
 
 /mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/src/option_parser.cpp
 ../inc/option_parser.h

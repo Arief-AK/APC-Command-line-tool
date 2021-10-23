@@ -11,6 +11,10 @@ namespace lib{
 class int_argument : public arguments::iargument{
     public:
         int_argument(std::string id, int value);
+
+        // TODO: Remove this temporary function
+        int value() const;
+
         virtual const std::string& id() const override;
         virtual ~int_argument() override;
 
