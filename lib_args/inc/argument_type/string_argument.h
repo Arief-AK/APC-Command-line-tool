@@ -10,13 +10,18 @@
 namespace lib{
 class string_argument : public arguments::iargument{
     public:
-        string_argument(std::string id, strd::string value);
+        string_argument(std::string id, std::string value);
+
+        // TODO: Remove this temporary function
         std::string value();
+
+        virtual const std::string& id() const override;
+        virtual ~string_argument() override;
 
     private:
 
         // Unique pointer of type 'string' to own the 'id' of the argument
-        std::unique_ptr<std::string id> m_id;
+        std::unique_ptr<std::string> m_id;
         std::string m_value;
     };
 }

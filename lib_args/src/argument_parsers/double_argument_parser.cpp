@@ -6,6 +6,12 @@
 
 std::unique_ptr<arguments::iargument> lib::double_argument_parser::parse(std::string id, const char *string) const
 {
-    // TODO: Implement parsing function for argument type 'double'
-    return std::unique_ptr<arguments::iargument>();
+    // TODO: Check functionality
+    int n;
+    std::string_view sv(string);
+    auto [ptr, ec] = std::from_chars(sv.data(),sv.data() + sv.size(),n);
+    if(ec == std::errc()){
+        return std::make_unique<double_argument>(std::move(id),n);
+    }
+    return nullptr;
 }

@@ -25,14 +25,18 @@ std::string options::option::help() const {
     return std::string{"Child classes can implement this function"};
 }
 
-bool options::option::parseable(const char *arg) const {
-    // TODO: Implement if option is parse-able
+bool options::option::can_parse(const char *arg) const {
+
+    // TODO: Implement if option is parse-able in regards to the parsers accepted
 
     // Check if option requires arguments
     if (m_accept_arguments){
 
-        // Go through the arguments
+        // TEMP: Go through the arguments
         if(arg){
+            // TEMP: Somehow relate to value type of argument in argument_parser ??
+
+            // TEMP: Just so build can be completed
             return true;
         }
     }

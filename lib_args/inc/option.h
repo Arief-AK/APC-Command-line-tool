@@ -33,7 +33,7 @@ namespace options{
         virtual std::string help() const;
 
         // Virtual method that checks if the option is a 'flag' or 'command'
-        virtual bool parseable(const char* arg) const;
+        virtual bool can_parse(const char* arg) const;
 
         // Virtual method that returns parsed argument(s)
         virtual std::unique_ptr<arguments::iargument> parse(const char* arg) const;
