@@ -27,22 +27,16 @@ std::string options::option::help() const {
 
 bool options::option::can_parse(const char *arg) const {
 
-    // TODO: Implement if option is parse-able in regards to the parsers accepted
+    // Check if 'arg' matches this option's short or long-flag
+    if(arg == m_long || arg == m_short){
 
-    // Check if option requires arguments
-    if (m_accept_arguments){
-
-        // TEMP: Go through the arguments
-        if(arg){
-            // TEMP: Somehow relate to value type of argument in argument_parser ??
-
-            // TEMP: Just so build can be completed
-            return true;
-        }
+        // Return true if matches flag
+        return true;
     }
     return false;
 }
 
 std::unique_ptr<arguments::iargument> options::option::parse(const char *arg) const {
+    // Argument parser is responsible for parsing the arguments of the option
     return m_parser->parse(m_long,arg);
 }

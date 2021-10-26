@@ -23,7 +23,7 @@ std::vector<std::unique_ptr<arguments::iargument>> lib::option_parser::parse_opt
     for (int i = 0; i < nargs; ++i){
         for (const auto& this_option : m_options){
             // Check if this option is required to be parsed
-            if(this_option->parseable(args[i])){
+            if(this_option->can_parse(args[i])){
 
                 ++i;
 
