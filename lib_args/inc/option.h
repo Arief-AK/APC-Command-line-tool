@@ -17,7 +17,7 @@ namespace options{
         option(std::string short_flag,
                std::string long_flag,
                std::string desc,
-               bool accept_arguments,
+               int number_of_arguments,
                std::unique_ptr<arguments::iargument_parser> parser);
 
         // Get member variable short_flag
@@ -25,6 +25,9 @@ namespace options{
 
         // Get member variable long_flag
         const std::string& long_flag() const;
+
+        // Get const member variable amount of accepted arguments
+        int num_arguments() const;
 
         // Get member variable description
         const std::string& desc() const;
@@ -36,7 +39,7 @@ namespace options{
         virtual bool can_parse(const char* arg) const;
 
         // Virtual method that returns parsed argument(s)
-        virtual std::unique_ptr<arguments::iargument> parse(const char* arg) const;
+        virtual std::pair<char**,std::unique_ptr<arguments::iargument>> parse(char* args[], int nargs) const;
 
         // Virtual destructor, implemented by the parent class
         virtual ~option() = default;
@@ -45,7 +48,7 @@ namespace options{
         std::string m_short;
         std::string m_long;
         std::string m_desc;
-        bool m_accept_arguments;
+        const int m_num_arguments; // Const as is not meant to be changed
         std::unique_ptr<arguments::iargument_parser> m_parser;
     };
 }

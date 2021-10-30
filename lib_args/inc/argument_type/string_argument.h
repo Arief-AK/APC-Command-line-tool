@@ -11,10 +11,7 @@ namespace lib{
 class string_argument : public arguments::iargument{
     public:
         string_argument(std::string id, std::string value);
-
-        // TODO: Remove this temporary function
         std::string value();
-
         virtual const std::string& id() const override;
         virtual ~string_argument() override;
 

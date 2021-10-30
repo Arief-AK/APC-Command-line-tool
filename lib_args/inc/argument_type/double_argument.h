@@ -11,6 +11,7 @@ namespace lib{
     class double_argument : public arguments::iargument{
     public:
         double_argument(std::string id, double value);
+        double value() const;
         virtual const std::string& id() const override;
         ~double_argument();
 

@@ -7,8 +7,6 @@
 
 typedef int param_type;
 
-
-// TODO: option can be 'h'(short) , 'help'(long) , description, true/false , type of iargument
 // option is used for configuring the parser
 struct option {
     char short_flag;            // simple char flag for option, e.g. 'h' for help

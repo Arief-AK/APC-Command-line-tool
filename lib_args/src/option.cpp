@@ -5,8 +5,10 @@
 #include "../inc/option.h"
 
 options::option::option(std::string short_flag, std::string long_flag, std::string desc,
-                        bool accept_arguments, std::unique_ptr<arguments::iargument_parser> parser)
-                        :m_short(short_flag), m_long(long_flag), m_desc(desc), m_accept_arguments(accept_arguments),
+                        int number_of_arguments,
+                        std::unique_ptr<arguments::iargument_parser> parser)
+                        :m_short(short_flag), m_long(long_flag), m_desc(desc),
+                        m_num_arguments(number_of_arguments),
                         m_parser(std::move(parser)) {}
 
 const std::string &options::option::short_flag() const {
@@ -15,6 +17,10 @@ const std::string &options::option::short_flag() const {
 
 const std::string &options::option::long_flag() const {
     return m_long;
+}
+
+int options::option::num_arguments() const {
+    return m_num_arguments;
 }
 
 const std::string &options::option::desc() const {
@@ -29,14 +35,37 @@ bool options::option::can_parse(const char *arg) const {
 
     // Check if 'arg' matches this option's short or long-flag
     if(arg == m_long || arg == m_short){
-
-        // Return true if matches flag
         return true;
     }
     return false;
 }
 
-std::unique_ptr<arguments::iargument> options::option::parse(const char *arg) const {
-    // Argument parser is responsible for parsing the arguments of the option
-    return m_parser->parse(m_long,arg);
+// TODO: Check functionality
+std::pair<char**,std::unique_ptr<arguments::iargument>> options::option::parse(char* args[], int nargs) const {
+
+    // 'nargs' must be equal to this option's accepted amount of arguments (m_num_arguments)
+    if(nargs < m_num_arguments){
+        return {args,nullptr};
+    }
+    // Check if this option is a flag or command in regard to accepted amount of arguments
+    /*else if(m_num_arguments == 0){
+
+        // TODO: Option is responsible for parsing as it is a flag
+        // TEMP
+        std::unique_ptr<arguments::iargument> parsed_argument = m_parser->parse(m_long,*args);
+        return {args,std::move(parsed_argument)};
+    }*/
+    else{
+
+        args++;
+
+        // Argument parser is responsible for parsing the arguments of the option
+        std::unique_ptr<arguments::iargument> parsed_argument = m_parser->parse(m_long,*args);
+
+        if(parsed_argument){
+            args++;
+        }
+
+        return {args,std::move(parsed_argument)};
+    }
 }

@@ -7,6 +7,10 @@
 lib::double_argument::double_argument(std::string id, double value)
 :m_id(std::make_unique<std::string>(id)),m_value(value){}
 
+double lib::double_argument::value() const {
+    return m_value;
+}
+
 const std::string &lib::double_argument::id() const {
     return *m_id;
 }

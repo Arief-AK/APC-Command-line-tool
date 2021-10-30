@@ -16,6 +16,6 @@ const std::string &lib::string_argument::id() const {
 }
 
 lib::string_argument::~string_argument() {
-    m_value = 0;
+    m_value = nullptr;
     m_id = nullptr;
 }

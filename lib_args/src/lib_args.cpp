@@ -1,7 +1,6 @@
 #include "lib_args.h"
 #include <sstream>
 
-// TODO: Trying to be a singleton
 // the one and only parser instance
 static option_parser parser{};
 
@@ -43,7 +42,6 @@ static bool is_long_flag(const std::string& flag){
 }
 
 
-// TODO: option_parser constructor
 option_parser::option_parser():
 m_options{}{
     // add the default help option
@@ -67,8 +65,6 @@ std::vector<argument> option_parser::parse(const std::string& line) {
 
     option* current_option{nullptr};
 
-
-    // TODO: Finding a flag. Either '-'(short_flag) or '--'(long_flag).
     while(iss >> token){
         if (current_option == nullptr){
             // if awaiting a new flag, try to match it
