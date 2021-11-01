@@ -48,13 +48,13 @@ std::pair<char**,std::unique_ptr<arguments::iargument>> options::option::parse(c
         return {args,nullptr};
     }
     // Check if this option is a flag or command in regard to accepted amount of arguments
-    /*else if(m_num_arguments == 0){
+    else if(m_num_arguments == 0){
 
         // TODO: Option is responsible for parsing as it is a flag
         // TEMP
         std::unique_ptr<arguments::iargument> parsed_argument = m_parser->parse(m_long,*args);
         return {args,std::move(parsed_argument)};
-    }*/
+    }
     else{
 
         args++;

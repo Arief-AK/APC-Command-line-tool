@@ -6,13 +6,10 @@
 
 int main(int argc, char *argv[]) {
 
-    // TODO: Check this...
-    //Adjust arguments (maybe null termination)
-    //++argv;
-
     // Make an option parser
     lib::option_parser optionParser;
 
+    // TODO: Make a flag with a 'bool_argument_parser'
     // Add a flag to the parser
     optionParser.add_option(std::make_unique<options::option>("-v",
                                                               "--verbose",
