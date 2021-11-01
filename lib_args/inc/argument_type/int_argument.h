@@ -10,6 +10,7 @@
 namespace lib{
 class int_argument : public arguments::iargument{
     public:
+        int_argument(int value);
         int_argument(std::string id, int value);
         int value() const;
         virtual const std::string& id() const override;

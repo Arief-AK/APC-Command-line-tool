@@ -15,21 +15,24 @@ int main(int argc, char *argv[]) {
                                                               "--verbose",
                                                               "A test flag",
                                                               0,
-                                                              std::make_unique<lib::int_argument_parser>()));
+                                                              std::make_unique<lib::int_argument_parser>(),
+                                                              std::make_unique<lib::int_argument>(0)));
 
     // Add an int option to the parser
     optionParser.add_option(std::make_unique<options::option>("-l",
                                                               "--level",
                                                               "This option shows the level",
                                                               1,
-                                                              std::make_unique<lib::int_argument_parser>()));
+                                                              std::make_unique<lib::int_argument_parser>(),
+                                                              std::make_unique<lib::int_argument>(5)));
 
     // Add a double option to the parser
     optionParser.add_option(std::make_unique<options::option>("-m",
                                                               "--multiply",
                                                               "This option will multiply the 2 arguments together",
                                                               2,
-                                                              std::make_unique<lib::double_argument_parser>()));
+                                                              std::make_unique<lib::double_argument_parser>(),
+                                                              std::make_unique<lib::int_argument>(5)));
 
     // Print all accepted options from the parser
     optionParser.print_all_options();

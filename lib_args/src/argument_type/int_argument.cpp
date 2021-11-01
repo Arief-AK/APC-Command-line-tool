@@ -4,6 +4,9 @@
 
 #include "../inc/argument_type/int_argument.h"
 
+lib::int_argument::int_argument(int value)
+:m_id(std::make_unique<std::string>("Default")), m_value(value) {}
+
 lib::int_argument::int_argument(std::string id, int value)
 : m_id{std::make_unique<std::string>(id)},m_value(value){}
 

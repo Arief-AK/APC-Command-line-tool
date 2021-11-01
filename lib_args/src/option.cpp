@@ -6,10 +6,12 @@
 
 options::option::option(std::string short_flag, std::string long_flag, std::string desc,
                         int number_of_arguments,
-                        std::unique_ptr<arguments::iargument_parser> parser)
+                        std::unique_ptr<arguments::iargument_parser> parser,
+                        std::unique_ptr<arguments::iargument> default_value)
                         :m_short(short_flag), m_long(long_flag), m_desc(desc),
                         m_num_arguments(number_of_arguments),
-                        m_parser(std::move(parser)) {}
+                        m_parser(std::move(parser)),
+                        m_default_value(std::move(default_value)){}
 
 const std::string &options::option::short_flag() const {
     return m_short;
