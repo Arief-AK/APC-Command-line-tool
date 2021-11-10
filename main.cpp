@@ -7,9 +7,10 @@
 
 int main(int argc, char *argv[]) {
 
+    // Create a builder
     auto op = lib::option_parser_builder()
             .with_option(std::make_unique<options::option>("-v", "--verbose", "A test flag", 0,std::make_unique<lib::bool_argument_parser>()))
-            .with_int_option(std::make_unique<options::option>("-l", "--level", "This option shows the level", 1,std::make_unique<lib::int_argument_parser>()))
+            .with_int_option(std::make_unique<options::option>("-l", "--level", "This option shows the level", 1,std::make_unique<lib::int_argument_parser>(),{1,10}))
             .with_dbl_option(std::make_unique<options::option>("-m", "--multiply","This option will multiply the 2 arguments together", 2,std::make_unique<lib::double_argument_parser>()))
             .with_text_option(std::make_unique<options::option>("-s", "--store", "This option will store 2 arguments together", 1,std::make_unique<lib::string_argument_parser>()))
             .make();

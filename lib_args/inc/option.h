@@ -10,7 +10,6 @@
 #include "interfaces/iargument_parser.h"
 
 namespace options{
-
     class option{
     public:
 
@@ -19,6 +18,20 @@ namespace options{
                std::string desc,
                int number_of_arguments,
                std::unique_ptr<arguments::iargument_parser> parser);
+
+        option(std::string short_flag,
+               std::string long_flag,
+               std::string desc,
+               int number_of_arguments,
+               std::unique_ptr<arguments::iargument_parser> parser,
+               std::initializer_list<int> range);
+
+        option(std::string short_flag,
+               std::string long_flag,
+               std::string desc,
+               int number_of_arguments,
+               std::unique_ptr<arguments::iargument_parser> parser,
+               std::initializer_list<double> range);
 
         // Get member variable short_flag
         const std::string& short_flag() const;
@@ -51,6 +64,7 @@ namespace options{
         const int m_num_arguments; // Const as is not meant to be changed
         std::unique_ptr<arguments::iargument_parser> m_parser;
 
+        std::vector<double> m_range;
         // TODO: Set a default value for each option and use it
         //std::unique_ptr<arguments::iargument> m_default_value;
     };

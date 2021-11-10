@@ -8,9 +8,31 @@
 options::option::option(std::string short_flag, std::string long_flag, std::string desc,
                         int number_of_arguments,
                         std::unique_ptr<arguments::iargument_parser> parser)
+        :m_short(short_flag), m_long(long_flag), m_desc(desc),
+         m_num_arguments(number_of_arguments),
+         m_parser(std::move(parser)){}
+
+options::option::option(std::string short_flag, std::string long_flag, std::string desc,
+                        int number_of_arguments,
+                        std::unique_ptr<arguments::iargument_parser> parser,
+                        std::initializer_list<int> range)
                         :m_short(short_flag), m_long(long_flag), m_desc(desc),
                         m_num_arguments(number_of_arguments),
-                        m_parser(std::move(parser)){}
+                        m_parser(std::move(parser))
+{
+    m_range.insert(m_range.end(),range.begin(),range.end());
+}
+
+options::option::option(std::string short_flag, std::string long_flag, std::string desc,
+                        int number_of_arguments,
+                        std::unique_ptr<arguments::iargument_parser> parser,
+                        std::initializer_list<double> range)
+        :m_short(short_flag), m_long(long_flag), m_desc(desc),
+         m_num_arguments(number_of_arguments),
+         m_parser(std::move(parser))
+{
+    m_range.insert(m_range.end(),range.begin(),range.end());
+}
 
 const std::string &options::option::short_flag() const {
     return m_short;
