@@ -15,11 +15,17 @@
 namespace lib{
     class option_parser{
     public:
+
+        //Constructor
+        option_parser();
+
         // Function to add an option to the 'option_parser'
         void add_option(std::unique_ptr<options::option> new_option);
 
         // Function to print all options from the accepted options of the parser
         void print_all_options();
+
+        int get_arg_limit(char *args[],std::string long_flag) const;
 
         // Function that returns a vector of parsed arguments
         std::vector<std::unique_ptr<arguments::iargument>> parse_option(char *args[], int nargs) const;

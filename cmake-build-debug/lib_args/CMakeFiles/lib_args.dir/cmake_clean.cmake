@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lib_args.dir/src/argument_type/string_argument.cpp.o"
   "CMakeFiles/lib_args.dir/src/option.cpp.o"
   "CMakeFiles/lib_args.dir/src/option_parser.cpp.o"
+  "CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.o"
   "liblib_args.a"
   "liblib_args.pdb"
 )

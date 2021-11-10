@@ -12,6 +12,7 @@ target_sources(lib_args
         src/argument_type/string_argument.cpp
         src/argument_parsers/bool_argument_parser.cpp
         src/argument_type/bool_argument.cpp
+        src/option_parser_builder.cpp
         )
 
 target_compile_features(lib_args PUBLIC cxx_std_17)

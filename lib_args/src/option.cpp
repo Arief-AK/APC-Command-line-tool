@@ -2,6 +2,7 @@
 // Created by Arief on 10/20/2021.
 //
 
+#include <stdexcept>
 #include "../inc/option.h"
 
 options::option::option(std::string short_flag, std::string long_flag, std::string desc,
@@ -40,31 +41,28 @@ bool options::option::can_parse(const char *arg) const {
     return false;
 }
 
-// TODO: Check functionality
-std::pair<char**,std::unique_ptr<arguments::iargument>> options::option::parse(char* args[], int nargs) const {
+std::pair<char**,std::vector<std::unique_ptr<arguments::iargument>>> options::option::parse(char* args[], int nargs) const {
+    std::vector<std::unique_ptr<arguments::iargument>> parsed_arguments;
 
     // 'nargs' must be equal to this option's accepted amount of arguments (m_num_arguments)
     if(nargs < m_num_arguments){
-        return {args,nullptr};
+        return {args,std::move(parsed_arguments)};
     }
     // Check if this option is a flag or command in regard to accepted amount of arguments
     else if(m_num_arguments == 0){
 
-        //TODO: Check functionality
-        std::unique_ptr<arguments::iargument> parsed_argument = m_parser->parse(m_long,*args);
-        return {args,std::move(parsed_argument)};
+        parsed_arguments.push_back(m_parser->parse(m_long,*args));
+        return {args,std::move(parsed_arguments)};
     }
     else{
-
         args++;
 
-        // Argument parser is responsible for parsing the arguments of the option
-        std::unique_ptr<arguments::iargument> parsed_argument = m_parser->parse(m_long,*args);
-
-        if(parsed_argument){
+        for (int i = 0; i < m_num_arguments; ++i){
+            // Argument parser is responsible for parsing the arguments of the option
+            parsed_arguments.push_back(m_parser->parse(m_long,*args));
             args++;
         }
 
-        return {args,std::move(parsed_argument)};
+        return {args,std::move(parsed_arguments)};
     }
 }

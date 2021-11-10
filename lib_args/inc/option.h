@@ -39,7 +39,7 @@ namespace options{
         virtual bool can_parse(const char* arg) const;
 
         // Virtual method that returns parsed argument(s)
-        virtual std::pair<char**,std::unique_ptr<arguments::iargument>> parse(char* args[], int nargs) const;
+        virtual std::pair<char**,std::vector<std::unique_ptr<arguments::iargument>>> parse(char* args[], int nargs) const;
 
         // Virtual destructor, implemented by the parent class
         virtual ~option() = default;

@@ -395,6 +395,33 @@ src/option_parser.cpp.s:
 	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/option_parser.cpp.s
 .PHONY : src/option_parser.cpp.s
 
+src/option_parser_builder.o: src/option_parser_builder.cpp.o
+
+.PHONY : src/option_parser_builder.o
+
+# target to build an object file
+src/option_parser_builder.cpp.o:
+	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.o
+.PHONY : src/option_parser_builder.cpp.o
+
+src/option_parser_builder.i: src/option_parser_builder.cpp.i
+
+.PHONY : src/option_parser_builder.i
+
+# target to preprocess a source file
+src/option_parser_builder.cpp.i:
+	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.i
+.PHONY : src/option_parser_builder.cpp.i
+
+src/option_parser_builder.s: src/option_parser_builder.cpp.s
+
+.PHONY : src/option_parser_builder.s
+
+# target to generate assembly for a file
+src/option_parser_builder.cpp.s:
+	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.s
+.PHONY : src/option_parser_builder.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -434,6 +461,9 @@ help:
 	@echo "... src/option_parser.o"
 	@echo "... src/option_parser.i"
 	@echo "... src/option_parser.s"
+	@echo "... src/option_parser_builder.o"
+	@echo "... src/option_parser_builder.i"
+	@echo "... src/option_parser_builder.s"
 .PHONY : help
 
 
