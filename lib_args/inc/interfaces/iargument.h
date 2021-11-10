@@ -13,8 +13,6 @@ namespace arguments{
     public:
         virtual const std::string& id() const = 0;
         virtual ~iargument() = default;
-
-        // TODO: Create a (template) function that returns the value store with the argument
     };
 }
 

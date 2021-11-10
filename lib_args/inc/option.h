@@ -18,8 +18,7 @@ namespace options{
                std::string long_flag,
                std::string desc,
                int number_of_arguments,
-               std::unique_ptr<arguments::iargument_parser> parser,
-               std::unique_ptr<arguments::iargument> default_value);
+               std::unique_ptr<arguments::iargument_parser> parser);
 
         // Get member variable short_flag
         const std::string& short_flag() const;
@@ -53,7 +52,7 @@ namespace options{
         std::unique_ptr<arguments::iargument_parser> m_parser;
 
         // TODO: Set a default value for each option and use it
-        std::unique_ptr<arguments::iargument> m_default_value;
+        //std::unique_ptr<arguments::iargument> m_default_value;
     };
 }
 

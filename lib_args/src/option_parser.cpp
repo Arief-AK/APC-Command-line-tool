@@ -29,6 +29,10 @@ std::vector<std::unique_ptr<arguments::iargument>> lib::option_parser::parse_opt
 
         auto start_args = args;
 
+        // TODO: Check if this is --help command
+        // TODO: If help then
+        // print_all_options();
+
         for (const auto &this_option: m_options) {
 
             // Check if this option is required to be parsed

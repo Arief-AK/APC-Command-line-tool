@@ -15,7 +15,4 @@ const std::string &lib::string_argument::id() const {
     return *m_id;
 }
 
-lib::string_argument::~string_argument() {
-    m_value = nullptr;
-    m_id = nullptr;
-}
+lib::string_argument::~string_argument() = default;

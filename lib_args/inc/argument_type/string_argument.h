@@ -13,7 +13,7 @@ class string_argument : public arguments::iargument{
         string_argument(std::string id, std::string value);
         std::string value();
         virtual const std::string& id() const override;
-        virtual ~string_argument() override;
+        ~string_argument() override;
 
     private:
 

@@ -6,12 +6,10 @@
 
 options::option::option(std::string short_flag, std::string long_flag, std::string desc,
                         int number_of_arguments,
-                        std::unique_ptr<arguments::iargument_parser> parser,
-                        std::unique_ptr<arguments::iargument> default_value)
+                        std::unique_ptr<arguments::iargument_parser> parser)
                         :m_short(short_flag), m_long(long_flag), m_desc(desc),
                         m_num_arguments(number_of_arguments),
-                        m_parser(std::move(parser)),
-                        m_default_value(std::move(default_value)){}
+                        m_parser(std::move(parser)){}
 
 const std::string &options::option::short_flag() const {
     return m_short;
@@ -52,8 +50,7 @@ std::pair<char**,std::unique_ptr<arguments::iargument>> options::option::parse(c
     // Check if this option is a flag or command in regard to accepted amount of arguments
     else if(m_num_arguments == 0){
 
-        // TODO: Option is responsible for parsing as it is a flag
-        // TEMP
+        //TODO: Check functionality
         std::unique_ptr<arguments::iargument> parsed_argument = m_parser->parse(m_long,*args);
         return {args,std::move(parsed_argument)};
     }
