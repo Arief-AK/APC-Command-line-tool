@@ -6,7 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/inc/interfaces/iargument.h
+../lib_args/inc/argument_type/bool_argument.h
+interfaces/iargument.h
+../lib_args/inc/argument_type/interfaces/iargument.h
+
+../lib_args/inc/argument_type/double_argument.h
+interfaces/iargument.h
+../lib_args/inc/argument_type/interfaces/iargument.h
+
+../lib_args/inc/argument_type/int_argument.h
+interfaces/iargument.h
+../lib_args/inc/argument_type/interfaces/iargument.h
+
+../lib_args/inc/argument_type/string_argument.h
+interfaces/iargument.h
+../lib_args/inc/argument_type/interfaces/iargument.h
+
+../lib_args/inc/interfaces/iargument.h
 string
 -
 memory
@@ -14,7 +30,7 @@ memory
 vector
 -
 
-/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/inc/interfaces/iargument_parser.h
+../lib_args/inc/interfaces/iargument_parser.h
 stdexcept
 -
 string
@@ -24,19 +40,55 @@ memory
 charconv
 -
 iargument.h
-/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/inc/interfaces/iargument.h
+../lib_args/inc/interfaces/iargument.h
 
-/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/inc/option.h
+../lib_args/inc/interfaces/ilogger.h
+iostream
+-
+../inc/option_parser.h
+../lib_args/inc/inc/option_parser.h
+../inc/interfaces/iargument.h
+../lib_args/inc/inc/interfaces/iargument.h
+
+../lib_args/inc/interfaces/itext_writer.h
+iostream
+-
+../inc/argument_type/int_argument.h
+../lib_args/inc/inc/argument_type/int_argument.h
+../inc/argument_type/bool_argument.h
+../lib_args/inc/inc/argument_type/bool_argument.h
+../inc/argument_type/double_argument.h
+../lib_args/inc/inc/argument_type/double_argument.h
+../inc/argument_type/string_argument.h
+../lib_args/inc/inc/argument_type/string_argument.h
+
+../lib_args/inc/loggers/console_logger.h
+../inc/interfaces/ilogger.h
+../lib_args/inc/inc/interfaces/ilogger.h
+../inc/interfaces/itext_writer.h
+../lib_args/inc/inc/interfaces/itext_writer.h
+
+../lib_args/inc/option.h
 string
 -
 memory
 -
 interfaces/iargument_parser.h
-/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/inc/interfaces/iargument_parser.h
+../lib_args/inc/interfaces/iargument_parser.h
 
-/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/src/option.cpp
-stdexcept
+../lib_args/inc/option_parser.h
+vector
+-
+memory
+-
+iostream
 -
 ../inc/option.h
-/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/inc/option.h
+../lib_args/inc/option.h
+../inc/interfaces/iargument.h
+../lib_args/inc/interfaces/iargument.h
+
+/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/src/loggers/console_logger.cpp
+../inc/loggers/console_logger.h
+/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/src/inc/loggers/console_logger.h
 

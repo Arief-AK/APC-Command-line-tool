@@ -200,6 +200,32 @@ lib_args/CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.s"
 	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug/lib_args" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/src/option_parser_builder.cpp" -o CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.s
 
+lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o: lib_args/CMakeFiles/lib_args.dir/flags.make
+lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o: ../lib_args/src/loggers/console_logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o"
+	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug/lib_args" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o -c "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/src/loggers/console_logger.cpp"
+
+lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.i"
+	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug/lib_args" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/src/loggers/console_logger.cpp" > CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.i
+
+lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.s"
+	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug/lib_args" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/src/loggers/console_logger.cpp" -o CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.s
+
+lib_args/CMakeFiles/lib_args.dir/src/writers/console_writer.cpp.o: lib_args/CMakeFiles/lib_args.dir/flags.make
+lib_args/CMakeFiles/lib_args.dir/src/writers/console_writer.cpp.o: ../lib_args/src/writers/console_writer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object lib_args/CMakeFiles/lib_args.dir/src/writers/console_writer.cpp.o"
+	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug/lib_args" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lib_args.dir/src/writers/console_writer.cpp.o -c "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/src/writers/console_writer.cpp"
+
+lib_args/CMakeFiles/lib_args.dir/src/writers/console_writer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lib_args.dir/src/writers/console_writer.cpp.i"
+	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug/lib_args" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/src/writers/console_writer.cpp" > CMakeFiles/lib_args.dir/src/writers/console_writer.cpp.i
+
+lib_args/CMakeFiles/lib_args.dir/src/writers/console_writer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lib_args.dir/src/writers/console_writer.cpp.s"
+	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug/lib_args" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/lib_args/src/writers/console_writer.cpp" -o CMakeFiles/lib_args.dir/src/writers/console_writer.cpp.s
+
 # Object files for target lib_args
 lib_args_OBJECTS = \
 "CMakeFiles/lib_args.dir/src/option.cpp.o" \
@@ -212,7 +238,9 @@ lib_args_OBJECTS = \
 "CMakeFiles/lib_args.dir/src/argument_type/string_argument.cpp.o" \
 "CMakeFiles/lib_args.dir/src/argument_parsers/bool_argument_parser.cpp.o" \
 "CMakeFiles/lib_args.dir/src/argument_type/bool_argument.cpp.o" \
-"CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.o"
+"CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.o" \
+"CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o" \
+"CMakeFiles/lib_args.dir/src/writers/console_writer.cpp.o"
 
 # External object files for target lib_args
 lib_args_EXTERNAL_OBJECTS =
@@ -228,9 +256,11 @@ lib_args/liblib_args.a: lib_args/CMakeFiles/lib_args.dir/src/argument_type/strin
 lib_args/liblib_args.a: lib_args/CMakeFiles/lib_args.dir/src/argument_parsers/bool_argument_parser.cpp.o
 lib_args/liblib_args.a: lib_args/CMakeFiles/lib_args.dir/src/argument_type/bool_argument.cpp.o
 lib_args/liblib_args.a: lib_args/CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.o
+lib_args/liblib_args.a: lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o
+lib_args/liblib_args.a: lib_args/CMakeFiles/lib_args.dir/src/writers/console_writer.cpp.o
 lib_args/liblib_args.a: lib_args/CMakeFiles/lib_args.dir/build.make
 lib_args/liblib_args.a: lib_args/CMakeFiles/lib_args.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX static library liblib_args.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX static library liblib_args.a"
 	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug/lib_args" && $(CMAKE_COMMAND) -P CMakeFiles/lib_args.dir/cmake_clean_target.cmake
 	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug/lib_args" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lib_args.dir/link.txt --verbose=$(VERBOSE)
 

@@ -64,8 +64,6 @@ namespace options{
         std::unique_ptr<arguments::iargument_parser> m_parser;
 
         std::vector<double> m_range;
-        // TODO: Set a default value for each option and use it
-        //std::unique_ptr<arguments::iargument> m_default_value;
     };
 }
 

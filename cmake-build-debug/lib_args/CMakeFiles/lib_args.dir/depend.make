@@ -41,6 +41,19 @@ lib_args/CMakeFiles/lib_args.dir/src/argument_type/string_argument.cpp.o: ../lib
 lib_args/CMakeFiles/lib_args.dir/src/argument_type/string_argument.cpp.o: ../lib_args/inc/interfaces/iargument.h
 lib_args/CMakeFiles/lib_args.dir/src/argument_type/string_argument.cpp.o: ../lib_args/src/argument_type/string_argument.cpp
 
+lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o: ../lib_args/inc/argument_type/bool_argument.h
+lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o: ../lib_args/inc/argument_type/double_argument.h
+lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o: ../lib_args/inc/argument_type/int_argument.h
+lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o: ../lib_args/inc/argument_type/string_argument.h
+lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o: ../lib_args/inc/interfaces/iargument.h
+lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o: ../lib_args/inc/interfaces/iargument_parser.h
+lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o: ../lib_args/inc/interfaces/ilogger.h
+lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o: ../lib_args/inc/interfaces/itext_writer.h
+lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o: ../lib_args/inc/loggers/console_logger.h
+lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o: ../lib_args/inc/option.h
+lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o: ../lib_args/inc/option_parser.h
+lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o: ../lib_args/src/loggers/console_logger.cpp
+
 lib_args/CMakeFiles/lib_args.dir/src/option.cpp.o: ../lib_args/inc/interfaces/iargument.h
 lib_args/CMakeFiles/lib_args.dir/src/option.cpp.o: ../lib_args/inc/interfaces/iargument_parser.h
 lib_args/CMakeFiles/lib_args.dir/src/option.cpp.o: ../lib_args/inc/option.h
@@ -60,4 +73,13 @@ lib_args/CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.o: ../lib_args/in
 lib_args/CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.o: ../lib_args/inc/option_parser.h
 lib_args/CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.o: ../lib_args/inc/option_parser_builder.h
 lib_args/CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.o: ../lib_args/src/option_parser_builder.cpp
+
+lib_args/CMakeFiles/lib_args.dir/src/writers/console_writer.cpp.o: ../lib_args/inc/argument_type/bool_argument.h
+lib_args/CMakeFiles/lib_args.dir/src/writers/console_writer.cpp.o: ../lib_args/inc/argument_type/double_argument.h
+lib_args/CMakeFiles/lib_args.dir/src/writers/console_writer.cpp.o: ../lib_args/inc/argument_type/int_argument.h
+lib_args/CMakeFiles/lib_args.dir/src/writers/console_writer.cpp.o: ../lib_args/inc/argument_type/string_argument.h
+lib_args/CMakeFiles/lib_args.dir/src/writers/console_writer.cpp.o: ../lib_args/inc/interfaces/iargument.h
+lib_args/CMakeFiles/lib_args.dir/src/writers/console_writer.cpp.o: ../lib_args/inc/interfaces/itext_writer.h
+lib_args/CMakeFiles/lib_args.dir/src/writers/console_writer.cpp.o: ../lib_args/inc/writers/console_writer.h
+lib_args/CMakeFiles/lib_args.dir/src/writers/console_writer.cpp.o: ../lib_args/src/writers/console_writer.cpp
 

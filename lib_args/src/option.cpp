@@ -90,7 +90,7 @@ std::pair<char**,std::vector<std::unique_ptr<arguments::iargument>>> options::op
             }
             else{
                 // Argument parser is responsible for parsing the arguments of the option
-                parsed_arguments.push_back(m_parser->parse(m_long, *args, std::vector<double>()));
+                parsed_arguments.push_back(m_parser->parse(m_long, *args, m_range));
             }
             args++;
         }

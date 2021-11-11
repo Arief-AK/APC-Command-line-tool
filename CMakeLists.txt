@@ -8,7 +8,6 @@ set(target command_line_tool)
 target_sources(${target}
         PRIVATE
         main.cpp
-        #program.cpp
         )
 
 target_compile_features(${target} PRIVATE cxx_std_20)

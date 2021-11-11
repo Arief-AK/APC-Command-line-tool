@@ -341,6 +341,33 @@ src/argument_type/string_argument.cpp.s:
 	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/argument_type/string_argument.cpp.s
 .PHONY : src/argument_type/string_argument.cpp.s
 
+src/loggers/console_logger.o: src/loggers/console_logger.cpp.o
+
+.PHONY : src/loggers/console_logger.o
+
+# target to build an object file
+src/loggers/console_logger.cpp.o:
+	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o
+.PHONY : src/loggers/console_logger.cpp.o
+
+src/loggers/console_logger.i: src/loggers/console_logger.cpp.i
+
+.PHONY : src/loggers/console_logger.i
+
+# target to preprocess a source file
+src/loggers/console_logger.cpp.i:
+	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.i
+.PHONY : src/loggers/console_logger.cpp.i
+
+src/loggers/console_logger.s: src/loggers/console_logger.cpp.s
+
+.PHONY : src/loggers/console_logger.s
+
+# target to generate assembly for a file
+src/loggers/console_logger.cpp.s:
+	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.s
+.PHONY : src/loggers/console_logger.cpp.s
+
 src/option.o: src/option.cpp.o
 
 .PHONY : src/option.o
@@ -422,6 +449,33 @@ src/option_parser_builder.cpp.s:
 	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.s
 .PHONY : src/option_parser_builder.cpp.s
 
+src/writers/console_writer.o: src/writers/console_writer.cpp.o
+
+.PHONY : src/writers/console_writer.o
+
+# target to build an object file
+src/writers/console_writer.cpp.o:
+	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/writers/console_writer.cpp.o
+.PHONY : src/writers/console_writer.cpp.o
+
+src/writers/console_writer.i: src/writers/console_writer.cpp.i
+
+.PHONY : src/writers/console_writer.i
+
+# target to preprocess a source file
+src/writers/console_writer.cpp.i:
+	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/writers/console_writer.cpp.i
+.PHONY : src/writers/console_writer.cpp.i
+
+src/writers/console_writer.s: src/writers/console_writer.cpp.s
+
+.PHONY : src/writers/console_writer.s
+
+# target to generate assembly for a file
+src/writers/console_writer.cpp.s:
+	cd "/mnt/c/Users/Arief/Documents/00 - All My Needs/00 - School/01 - Saxion/01 - Modules/02 - Second Year/03 - Advanced Programming Concepts/Graded/command_line_tool/cmake-build-debug" && $(MAKE) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/writers/console_writer.cpp.s
+.PHONY : src/writers/console_writer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -455,6 +509,9 @@ help:
 	@echo "... src/argument_type/string_argument.o"
 	@echo "... src/argument_type/string_argument.i"
 	@echo "... src/argument_type/string_argument.s"
+	@echo "... src/loggers/console_logger.o"
+	@echo "... src/loggers/console_logger.i"
+	@echo "... src/loggers/console_logger.s"
 	@echo "... src/option.o"
 	@echo "... src/option.i"
 	@echo "... src/option.s"
@@ -464,6 +521,9 @@ help:
 	@echo "... src/option_parser_builder.o"
 	@echo "... src/option_parser_builder.i"
 	@echo "... src/option_parser_builder.s"
+	@echo "... src/writers/console_writer.o"
+	@echo "... src/writers/console_writer.i"
+	@echo "... src/writers/console_writer.s"
 .PHONY : help
 
 

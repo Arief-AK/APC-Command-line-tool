@@ -6,8 +6,6 @@
 
 std::unique_ptr<arguments::iargument>
 lib::string_argument_parser::parse(std::string id, const char *string, const std::vector<double> vector) const {
-
-    // TODO: Set vector with default limiters
     if(string && !vector.empty()){
         return std::make_unique<string_argument>(std::move(id),string);
     }

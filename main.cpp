@@ -1,9 +1,11 @@
 #include <sstream>
 #include <argument_parsers/int_argument_parser.h>
+#include <writers/console_writer.h>
 #include "argument_parsers/double_argument_parser.h"
 #include "argument_parsers/string_argument_parser.h"
 #include "argument_parsers/bool_argument_parser.h"
 #include "../inc/option_parser_builder.h"
+#include "../inc/loggers/console_logger.h"
 
 int main(int argc, char *argv[]) {
 
@@ -20,28 +22,9 @@ int main(int argc, char *argv[]) {
 
     // Pretty-output table
     std::cout << "\nList of parsed arguments:\n" << std::endl;
-
-    // Attempt to recognise arguments
-    for (const auto &arg: arguments) {
-
-        // Get a raw pointer from the unique pointer of the arguments
-        arguments::iargument *raw_arg = arg.get();
-
-        // Using 'dynamic cast' try to convert the correct pointer type
-        if (auto *int_arg = dynamic_cast<lib::int_argument *>(raw_arg)) {
-            std::cout << int_arg->id() << ":" << int_arg->value() << '\n';
-        } else if (auto *double_arg = dynamic_cast<lib::double_argument *>(raw_arg)) {
-            std::cout << double_arg->id() << ":" << double_arg->value() << '\n';
-        } else if (auto *string_arg = dynamic_cast<lib::string_argument *>(raw_arg)) {
-            std::cout << string_arg->id() << ":" << string_arg->value() << '\n';
-        } else if (auto *flag = dynamic_cast<lib::bool_argument *>(raw_arg)) {
-            auto value = flag->value() ? "True" : "False";
-            std::cout << flag->id() << ":" << value << " (FLAG)" << '\n';
-        } else {
-            std::cout << "\nUnidentified argument for id: " << arg->id();
-        }
-    }
-
+    auto console_output = lib::console_logger(std::make_unique<lib::console_writer>());
+    console_output.print(std::move(arguments));
     std::cout << "\nDone!";
+
     return 0;
 }
