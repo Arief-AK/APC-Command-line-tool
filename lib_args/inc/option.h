@@ -12,7 +12,6 @@
 namespace options{
     class option{
     public:
-
         option(std::string short_flag,
                std::string long_flag,
                std::string desc,
@@ -24,14 +23,14 @@ namespace options{
                std::string desc,
                int number_of_arguments,
                std::unique_ptr<arguments::iargument_parser> parser,
-               std::initializer_list<int> range);
+               int min, int max);
 
         option(std::string short_flag,
                std::string long_flag,
                std::string desc,
                int number_of_arguments,
                std::unique_ptr<arguments::iargument_parser> parser,
-               std::initializer_list<double> range);
+               double min, double max);
 
         // Get member variable short_flag
         const std::string& short_flag() const;

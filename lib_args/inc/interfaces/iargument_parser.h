@@ -5,6 +5,7 @@
 #ifndef COMMAND_LINE_TOOL_IARGUMENT_PARSER_H
 #define COMMAND_LINE_TOOL_IARGUMENT_PARSER_H
 
+#include <stdexcept>
 #include <string>
 #include <memory>
 #include <charconv>
@@ -13,7 +14,8 @@
 namespace arguments{
     class iargument_parser{
     public:
-        virtual std::unique_ptr<arguments::iargument> parse(std::string id, const char* arg) const = 0;
+        virtual std::unique_ptr<arguments::iargument>
+        parse(std::string id, const char *arg, std::vector<double> vector) const = 0;
         virtual ~iargument_parser() = default;
     };
 }

@@ -11,7 +11,8 @@
 namespace lib{
     class double_argument_parser : public arguments::iargument_parser{
     public:
-        std::unique_ptr<arguments::iargument> parse(std::string id, const char* string) const override;
+        std::unique_ptr<arguments::iargument>
+        parse(std::string id, const char *string, const std::vector<double> vector) const override;
     };
 }
 
