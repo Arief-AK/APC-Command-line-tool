@@ -65,9 +65,17 @@ lib_args/CMakeFiles/lib_args.dir/src/option_parser.cpp.o: ../lib_args/inc/option
 lib_args/CMakeFiles/lib_args.dir/src/option_parser.cpp.o: ../lib_args/inc/option_parser.h
 lib_args/CMakeFiles/lib_args.dir/src/option_parser.cpp.o: ../lib_args/src/option_parser.cpp
 
+lib_args/CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.o: ../lib_args/inc/argument_parsers/int_argument_parser.h
+lib_args/CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.o: ../lib_args/inc/argument_type/bool_argument.h
+lib_args/CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.o: ../lib_args/inc/argument_type/double_argument.h
+lib_args/CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.o: ../lib_args/inc/argument_type/int_argument.h
+lib_args/CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.o: ../lib_args/inc/argument_type/string_argument.h
 lib_args/CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.o: ../lib_args/inc/interfaces/iargument.h
 lib_args/CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.o: ../lib_args/inc/interfaces/iargument_parser.h
 lib_args/CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.o: ../lib_args/inc/option.h
+lib_args/CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.o: ../lib_args/inc/argument_parsers/bool_argument_parser.h
+lib_args/CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.o: ../lib_args/inc/argument_parsers/double_argument_parser.h
+lib_args/CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.o: ../lib_args/inc/argument_parsers/string_argument_parser.h
 lib_args/CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.o: ../lib_args/inc/interfaces/iargument.h
 lib_args/CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.o: ../lib_args/inc/interfaces/ioption_parser_builder.h
 lib_args/CMakeFiles/lib_args.dir/src/option_parser_builder.cpp.o: ../lib_args/inc/option_parser.h

@@ -9,7 +9,7 @@
 options::option::option(std::string short_flag, std::string long_flag, std::string desc,
                            int number_of_arguments,
                            std::unique_ptr<arguments::iargument_parser> parser)
-                            :m_short(short_flag), m_long(long_flag), m_desc(desc),
+                            :m_short("-"+short_flag), m_long("--"+long_flag), m_desc(desc),
                              m_num_arguments(number_of_arguments),
                              m_parser(std::move(parser)) {
     // Default limit values
@@ -19,7 +19,7 @@ options::option::option(std::string short_flag, std::string long_flag, std::stri
 
 options::option::option(std::string short_flag, std::string long_flag, std::string desc, int number_of_arguments,
                            std::unique_ptr<arguments::iargument_parser> parser, int min, int max)
-                           :m_short(short_flag), m_long(long_flag), m_desc(desc),
+                           :m_short("-"+short_flag), m_long("--"+long_flag), m_desc(desc),
                             m_num_arguments(number_of_arguments),
                             m_parser(std::move(parser)){
     m_range.push_back((double)min);
@@ -28,7 +28,7 @@ options::option::option(std::string short_flag, std::string long_flag, std::stri
 
 options::option::option(std::string short_flag, std::string long_flag, std::string desc, int number_of_arguments,
                         std::unique_ptr<arguments::iargument_parser> parser, double min, double max)
-        :m_short(short_flag), m_long(long_flag), m_desc(desc),
+        :m_short("-"+short_flag), m_long("--"+long_flag), m_desc(desc),
          m_num_arguments(number_of_arguments),
          m_parser(std::move(parser)){
     m_range.push_back(min);

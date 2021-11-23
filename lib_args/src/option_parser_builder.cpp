@@ -13,33 +13,56 @@ builders::ioption_parser_builder &lib::option_parser_builder::reset() {
     return *this;
 }
 
-builders::ioption_parser_builder &lib::option_parser_builder::with_option(std::unique_ptr<options::option> new_option) {
+builders::ioption_parser_builder &
+lib::option_parser_builder::with_option(std::string short_flag, std::string long_flag, std::string desc,
+                                        int number_of_arguments) {
     if(m_option_parser){
-        m_option_parser->add_option(std::move(new_option));
+        m_option_parser->add_option(std::make_unique<options::option>(short_flag,long_flag,desc,number_of_arguments,std::make_unique<lib::bool_argument_parser>()));
     }
     return *this;
 }
 
 builders::ioption_parser_builder &
-lib::option_parser_builder::with_int_option(std::unique_ptr<options::option> new_option) {
+lib::option_parser_builder::with_int_option(std::string short_flag, std::string long_flag, std::string desc,
+                                            int number_of_arguments) {
     if(m_option_parser){
-        m_option_parser->add_option(std::move(new_option));
+        m_option_parser->add_option(std::make_unique<options::option>(short_flag,long_flag,desc,number_of_arguments,std::make_unique<lib::int_argument_parser>()));
     }
     return *this;
 }
 
 builders::ioption_parser_builder &
-lib::option_parser_builder::with_dbl_option(std::unique_ptr<options::option> new_option) {
+lib::option_parser_builder::with_int_option(std::string short_flag, std::string long_flag, std::string desc,
+                                            int number_of_arguments, int min, int max) {
     if(m_option_parser){
-        m_option_parser->add_option(std::move(new_option));
+        m_option_parser->add_option(std::make_unique<options::option>(short_flag,long_flag,desc,number_of_arguments,std::make_unique<lib::int_argument_parser>(),min,max));
     }
     return *this;
 }
 
 builders::ioption_parser_builder &
-lib::option_parser_builder::with_text_option(std::unique_ptr<options::option> new_option) {
+lib::option_parser_builder::with_dbl_option(std::string short_flag, std::string long_flag, std::string desc,
+                                            int number_of_arguments) {
     if(m_option_parser){
-        m_option_parser->add_option(std::move(new_option));
+        m_option_parser->add_option(std::make_unique<options::option>(short_flag,long_flag,desc,number_of_arguments,std::make_unique<lib::double_argument_parser>()));
+    }
+    return *this;
+}
+
+builders::ioption_parser_builder &
+lib::option_parser_builder::with_dbl_option(std::string short_flag, std::string long_flag, std::string desc,
+                                            int number_of_arguments, double min, double max) {
+    if(m_option_parser){
+        m_option_parser->add_option(std::make_unique<options::option>(short_flag,long_flag,desc,number_of_arguments,std::make_unique<lib::double_argument_parser>(),min,max));
+    }
+    return *this;
+}
+
+builders::ioption_parser_builder &
+lib::option_parser_builder::with_text_option(std::string short_flag, std::string long_flag, std::string desc,
+                                             int number_of_arguments) {
+    if(m_option_parser){
+        m_option_parser->add_option(std::make_unique<options::option>(short_flag,long_flag,desc,number_of_arguments,std::make_unique<lib::string_argument_parser>()));
     }
     return *this;
 }
