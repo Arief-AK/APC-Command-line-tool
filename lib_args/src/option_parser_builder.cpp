@@ -14,10 +14,9 @@ builders::ioption_parser_builder &lib::option_parser_builder::reset() {
 }
 
 builders::ioption_parser_builder &
-lib::option_parser_builder::with_option(std::string short_flag, std::string long_flag, std::string desc,
-                                        int number_of_arguments) {
+lib::option_parser_builder::with_option(std::string short_flag, std::string long_flag, std::string desc) {
     if(m_option_parser){
-        m_option_parser->add_option(std::make_unique<options::option>(short_flag,long_flag,desc,number_of_arguments,std::make_unique<lib::bool_argument_parser>()));
+        m_option_parser->add_option(std::make_unique<options::option>(short_flag,long_flag,desc,0,std::make_unique<lib::bool_argument_parser>()));
     }
     return *this;
 }

@@ -4,23 +4,27 @@
 
 #include "../inc/option_parser.h"
 
-lib::option_parser::option_parser() :m_options{}{}
+lib::option_parser::option_parser() :m_help_message{},m_help_set{false},m_options{}{}
 
 void lib::option_parser::add_option(std::unique_ptr<options::option> new_option) {
     // Add option to vector in 'option_parser'
     m_options.push_back(std::move(new_option));
 }
 
-void lib::option_parser::print_all_options() {
-
-    std::cout << "\nList of accepted options:\n" << std::endl;
-
-    for (auto& option: m_options) {
-        std::cout << option->desc() << '\n';
+void lib::option_parser::print_all_options(const char *args) {
+    if((std::string)args == "-h" || (std::string)args == "--help"){
+        if(!m_help_set){
+            m_help_set = true;
+            m_help_message += "DESCRIPTIONS:\n\n";
+            m_help_message += "--help This is an option to display all descriptions of options\n";
+            for (auto &opt:m_options) {
+                m_help_message += opt->long_flag()+" "+opt->desc()+'\n';
+            }
+        }
     }
 }
 
-std::vector<std::unique_ptr<arguments::iargument>> lib::option_parser::parse_option(char *args[], int nargs) const {
+std::vector<std::unique_ptr<arguments::iargument>> lib::option_parser::parse_option(char *args[], int nargs) {
 
     std::vector <std::unique_ptr<arguments::iargument>> parsed;
 
@@ -33,7 +37,7 @@ std::vector<std::unique_ptr<arguments::iargument>> lib::option_parser::parse_opt
 
         // TODO: Check if this is --help command
         // TODO: If help then
-        // print_all_options();
+        print_all_options(*args);
 
         for (const auto &this_option: m_options) {
 
@@ -67,4 +71,8 @@ std::vector<std::unique_ptr<arguments::iargument>> lib::option_parser::parse_opt
 
     }while (args != end);
     return parsed;
+}
+
+std::string lib::option_parser::get_help() {
+    return m_help_message;
 }

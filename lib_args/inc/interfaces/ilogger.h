@@ -6,13 +6,14 @@
 #define COMMAND_LINE_TOOL_ILOGGER_H
 
 #include <iostream>
+#include <string>
 #include "../inc/option_parser.h"
 #include "../inc/interfaces/iargument.h"
 
 namespace loggers{
     class ilogger{
     public:
-        virtual void print(std::vector<std::unique_ptr<arguments::iargument>> arguments) const = 0;
+        virtual void print(std::string help_messages,std::vector<std::unique_ptr<arguments::iargument>> arguments) const = 0;
         virtual ~ilogger() = default;
     };
 }

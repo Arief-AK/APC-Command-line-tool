@@ -15,8 +15,7 @@ namespace builders{
         virtual ioption_parser_builder& reset() = 0;
         virtual ioption_parser_builder& with_option(std::string short_flag,
                                                     std::string long_flag,
-                                                    std::string desc,
-                                                    int number_of_arguments) = 0;
+                                                    std::string desc) = 0;
 
         virtual ioption_parser_builder& with_int_option(std::string short_flag,
                                                     std::string long_flag,

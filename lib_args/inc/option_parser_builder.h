@@ -11,6 +11,8 @@
 #include "argument_parsers/bool_argument_parser.h"
 
 #include "../inc/interfaces/ioption_parser_builder.h"
+#include "../inc/loggers/console_logger.h"
+#include "../inc/writers/console_writer.h"
 #include "../inc/option_parser.h"
 
 namespace lib{
@@ -22,8 +24,7 @@ namespace lib{
         ioption_parser_builder& reset() override;
         ioption_parser_builder& with_option(std::string short_flag,
                                                     std::string long_flag,
-                                                    std::string desc,
-                                                    int number_of_arguments) override;
+                                                    std::string desc) override;
 
         ioption_parser_builder& with_int_option(std::string short_flag,
                                                 std::string long_flag,
@@ -56,7 +57,6 @@ namespace lib{
         ~option_parser_builder() override;
 
     private:
-
         // A unique pointer to store the actual option parser
         std::unique_ptr<lib::option_parser> m_option_parser;
     };
