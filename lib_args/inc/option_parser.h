@@ -11,13 +11,10 @@
 
 #include "../inc/option.h"
 #include "../inc/interfaces/iargument.h"
-#include "../inc/interfaces/ilogger.h"
-#include "../inc/interfaces/itext_writer.h"
 
 namespace lib{
     class option_parser{
     public:
-
         //Constructor
         option_parser();
 
@@ -25,7 +22,7 @@ namespace lib{
         void add_option(std::unique_ptr<options::option> new_option);
 
         // Function to return help descriptions of all options
-        std::string get_help();
+        std::string help_requested();
 
         // Function to print all options from the accepted options of the parser
         void print_all_options(const char *args);
@@ -34,11 +31,11 @@ namespace lib{
         std::vector<std::unique_ptr<arguments::iargument>> parse_option(char *args[], int nargs);
 
     private:
-        // String for displaying help message
-        std::string m_help_message;
-
         // Flag that is set when 'help' flag is detected
         bool m_help_set;
+
+        // String for displaying help message
+        std::string m_help_message;
 
         // A vector that stores injected options
         std::vector<std::unique_ptr<options::option>> m_options;

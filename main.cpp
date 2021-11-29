@@ -4,7 +4,7 @@
 
 int main(int argc, char *argv[]) {
 
-    // Create a builder
+    // Create an option parser using a builder
     auto op = lib::option_parser_builder()
             .with_option("v", "verbose", "A test flag")
             .with_int_option("l", "level", "This option shows the level", 1,1,10)
@@ -15,9 +15,9 @@ int main(int argc, char *argv[]) {
     // Parse all arguments passed from terminal
     auto arguments = op->parse_option(argv, argc);
 
-    // Create an output
-    auto console_output = lib::console_logger(std::make_unique<lib::console_writer>());
-    console_output.print(op->get_help(),std::move(arguments));
+    // Create an output and print
+    auto console_output = lib::console_logger();
+    console_output.print(op->help_requested(), std::move(arguments));
 
     return 0;
 }

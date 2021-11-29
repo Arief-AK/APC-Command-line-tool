@@ -4,18 +4,16 @@
 
 #include "../inc/loggers/console_logger.h"
 
-lib::console_logger::console_logger():m_writer(nullptr) {}
-
-lib::console_logger::console_logger(std::unique_ptr<writers::itext_writer> writer)
-:m_writer(std::move(writer)){}
+lib::console_logger::console_logger()
+:m_writer(std::make_unique<lib::console_writer>()){}
 
 void lib::console_logger::print(std::string help_messages,std::vector<std::unique_ptr<arguments::iargument>> arguments) const {
 
-    // Firstly, print help message if requested
-    std::cout << help_messages;
+    // Print help message (blank when help message is not requested)
+    *m_writer << help_messages;
 
-    // Pretty-output table
-    std::cout << "\nList of parsed arguments:\n" << std::endl;
+    // Output information to user
+    *m_writer << "\nList of parsed arguments:\n\n";
 
     // Attempt to recognise arguments
     for (const auto &arg: arguments) {
@@ -36,4 +34,6 @@ void lib::console_logger::print(std::string help_messages,std::vector<std::uniqu
             throw std::logic_error("ID is not identified. Please check arguments.");
         }
     }
+
+    *m_writer << "\nDone!\n";
 }

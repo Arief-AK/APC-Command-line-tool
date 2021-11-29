@@ -21,8 +21,8 @@ lib::console_writer &lib::console_writer::operator<<(const char* literal) {
     return *this;
 }
 
-lib::console_writer &lib::console_writer::operator<<(std::string string) {
-    std::cout << string;
+lib::console_writer &lib::console_writer::operator<<(std::string arg) {
+    std::cout << arg;
     return *this;
 }
 

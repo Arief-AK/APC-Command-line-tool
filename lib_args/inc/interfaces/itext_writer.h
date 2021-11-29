@@ -6,6 +6,7 @@
 #define COMMAND_LINE_TOOL_ITEXT_WRITER_H
 
 #include <iostream>
+#include <string>
 #include "../inc/argument_type/int_argument.h"
 #include "../inc/argument_type/bool_argument.h"
 #include "../inc/argument_type/double_argument.h"
@@ -14,6 +15,11 @@
 namespace writers{
     class itext_writer{
     public:
+        virtual itext_writer& operator<<(std::string arg) = 0;
+        virtual itext_writer& operator<<(int value) = 0;
+        virtual itext_writer& operator<<(double value) = 0;
+        virtual itext_writer& operator<<(const char* literal) = 0;
+
         virtual itext_writer& operator<<(lib::int_argument *arg) = 0;
         virtual itext_writer& operator<<(lib::double_argument *arg) = 0;
         virtual itext_writer& operator<<(lib::string_argument *arg) = 0;

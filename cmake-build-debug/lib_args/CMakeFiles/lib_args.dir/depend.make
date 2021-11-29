@@ -52,6 +52,7 @@ lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o: ../lib_args/i
 lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o: ../lib_args/inc/loggers/console_logger.h
 lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o: ../lib_args/inc/option.h
 lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o: ../lib_args/inc/option_parser.h
+lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o: ../lib_args/inc/writers/console_writer.h
 lib_args/CMakeFiles/lib_args.dir/src/loggers/console_logger.cpp.o: ../lib_args/src/loggers/console_logger.cpp
 
 lib_args/CMakeFiles/lib_args.dir/src/option.cpp.o: ../lib_args/inc/interfaces/iargument.h
@@ -59,15 +60,8 @@ lib_args/CMakeFiles/lib_args.dir/src/option.cpp.o: ../lib_args/inc/interfaces/ia
 lib_args/CMakeFiles/lib_args.dir/src/option.cpp.o: ../lib_args/inc/option.h
 lib_args/CMakeFiles/lib_args.dir/src/option.cpp.o: ../lib_args/src/option.cpp
 
-lib_args/CMakeFiles/lib_args.dir/src/option_parser.cpp.o: ../lib_args/inc/argument_type/bool_argument.h
-lib_args/CMakeFiles/lib_args.dir/src/option_parser.cpp.o: ../lib_args/inc/argument_type/double_argument.h
-lib_args/CMakeFiles/lib_args.dir/src/option_parser.cpp.o: ../lib_args/inc/argument_type/int_argument.h
-lib_args/CMakeFiles/lib_args.dir/src/option_parser.cpp.o: ../lib_args/inc/argument_type/string_argument.h
-lib_args/CMakeFiles/lib_args.dir/src/option_parser.cpp.o: ../lib_args/inc/interfaces/iargument.h
 lib_args/CMakeFiles/lib_args.dir/src/option_parser.cpp.o: ../lib_args/inc/interfaces/iargument.h
 lib_args/CMakeFiles/lib_args.dir/src/option_parser.cpp.o: ../lib_args/inc/interfaces/iargument_parser.h
-lib_args/CMakeFiles/lib_args.dir/src/option_parser.cpp.o: ../lib_args/inc/interfaces/ilogger.h
-lib_args/CMakeFiles/lib_args.dir/src/option_parser.cpp.o: ../lib_args/inc/interfaces/itext_writer.h
 lib_args/CMakeFiles/lib_args.dir/src/option_parser.cpp.o: ../lib_args/inc/option.h
 lib_args/CMakeFiles/lib_args.dir/src/option_parser.cpp.o: ../lib_args/inc/option_parser.h
 lib_args/CMakeFiles/lib_args.dir/src/option_parser.cpp.o: ../lib_args/src/option_parser.cpp
